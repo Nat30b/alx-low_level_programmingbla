@@ -1,8 +1,10 @@
 #include <stdio.h>
-/*
-*main - entry point
+/**
+*
+* main - entry point
 * 
-*Return: 0 after printing using function printf
+* Return: 0 after printing using function printf
+*
 */
 int main(void)
 {
