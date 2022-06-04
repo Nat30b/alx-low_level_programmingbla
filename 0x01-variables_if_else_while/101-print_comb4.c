@@ -16,8 +16,8 @@ for (hundreds = '0'; hundreds <= '9'; hundreds++)
 for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
 {
 for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
-{	
-if (!((ones == tens) || (hundreds == tens) ||(tens > ones) || (hundreds > tens)))/*eliminates repeatitio*/
+{
+if (!((ones == tens) || (hundreds == tens) ||(tens > ones) || (hundreds > tens)))/*eliminates repeatition*/
 {
 putchar(hundreds);
 putchar(tens);
