@@ -1,31 +1,32 @@
 #include <stdio.h>
 
 /**
- *main - prints all possible different combinations of two digits.
- *Return: Always 0 (Success)
+ *main - Prints combination of numbers
+ *
+ *Return: Always (Success)
  */
-
 int main(void)
 {
-int ones = '0';
-int tens = '0';
+int c, i;
 
-for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+for (c = '0'; c <= '9'; c++)
 {
-for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
+for (i = '0'; i <= '9'; i++)
 {
-if (!((ones == tens) || (tens > ones)))/*eliminates repeatition*/
-																			{
-																			putchar(tens);
-																			putchar(ones);
-																			if (!(ones == '9' && tens == '8'))/*addes comma and space*/
-																																						{
+if (c < i)																			{
+																				putchar(c);
+																				putchar(i);
+
+																				if (c != '8' || (c == '8' && i != '9'))																																		{
 																																						putchar(',');
 																																						putchar(' ');
-																																						}
-																			}
+																																							}
+																				}
 }
 }
+
 putchar('\n');
+
 return (0);
 }
+
