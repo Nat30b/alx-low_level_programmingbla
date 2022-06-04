@@ -5,28 +5,28 @@
  *
  *Return: Always (Success)
  */
+
 int main(void)
 {
-int c, i;
+		int ones = '0';
+			int tens = '0';
 
-for (c = '0'; c <= '9'; c++)
-{
-for (i = '0'; i <= '9'; i++)
-{
-if (c < i)																			{
-																				putchar(c);
-																				putchar(i);
-
-																				if (c != '8' || (c == '8' && i != '9'))																																		{
-																																						putchar(',');
-																																						putchar(' ');
-																																							}
-																				}
+				for (tens = '0'; tens <= '9'; tens++)/* prints tens digit*/
+						{
+									for (ones = '0'; ones <= '9'; ones++)/* prints ones digit*/
+												{
+																if (!((ones == tens) || (tens > ones)))/*eliminates repeatition*/
+																				{
+																									putchar(tens);
+																													putchar(ones);
+																																	if (!(ones == '9' && tens == '8'))/*addes comma and space*/
+																																						{
+																																												putchar(',');
+																																																	putchar(' ');
+																																																					}
+																																				}
+																		}
+										}
+					putchar('\n');
+						return (0);
 }
-}
-
-putchar('\n');
-
-return (0);
-}
-
