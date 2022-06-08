@@ -1,19 +1,13 @@
-#include "main.h"
+#include<stdio.h>
 /**
- *main - Entry point
- *   
- *Return: Always 0 (Success)
- */
+ * *	main - to print putchar
+ * *	Description: print the word of given
+ * *	Return: 0 always
+ * *
+ * *
+ * */
 int main(void)
 {
-char *sh = "main";
-
-while (*sh)
-{
-_putchar(*sh);
-sh++;
-}
-_putchar('\n');
-
-return (0);
+		printf("_putchar");
+			return (0);
 }
