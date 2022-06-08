@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  *  *main-program entry point for execution.
  *   *@c: charcter value.
