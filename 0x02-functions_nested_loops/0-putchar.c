@@ -1,13 +1,17 @@
-#include<stdio.h>
+#include "main.h"
 /**
- * *	main - to print putchar
- * *	Description: print the word of given
- * *	Return: 0 always
- * *
- * *
- * */
+ *main - prints the string "Holberton" from a character array.
+ *Return: 0 on success.
+ */
 int main(void)
 {
-		printf("_putchar");
-			return (0);
+char c[] = "Holberton";
+int i;
+
+for (i = 0; i < 9; i++)
+{
+_putchar(c[i]);
+}
+_putchar('\n');
+return (0);
 }
