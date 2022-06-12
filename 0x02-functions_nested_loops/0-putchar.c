@@ -2,22 +2,15 @@
 
 
 /**
- *main - Entry point
- *
- *Return: nothing, return void
+ *print_alphabet -> prints lowercase alphabets
  */
 
-int main(void)
+void print_alpphabet(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	int j;
+	for(j = 'a'; j<= 'z'; j++)
+	{
+		_putchar(j);
+	}
 	_putchar('\n');
-
-	return (0);
 }
