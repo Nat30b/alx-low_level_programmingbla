@@ -7,14 +7,12 @@
  *Return: void that means our answer is correct
  */
 
-int _strlen(char *s)
+int _strlen(char *c)
 {
-int u;
+  int i = 0;
 
-u = 0;
-while (s[u] != '\0')
-{
-u++;
+  while (c[i] != '\0')
+    i++;
+  return (i);
 }
-return (u);
-}
+
