@@ -1,4 +1,4 @@
-#include "main.h"
+#include "MAIN.H"
 
 /**
  *  *_strlen -length of a string
