@@ -28,10 +28,10 @@ if (str2[j] == str1[i]) /*Evaluate condition*/
 count++; /*count number*/
 break;
 }
-
 j++;    /*add j+1*/
 }
-																	if (s[i] != accept[j]) /*If aren't equals*/
+
+if (s[i] != accept[j]) /*If aren't equals*/
 {
 break;
 }
